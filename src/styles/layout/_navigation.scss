@@ -29,6 +29,7 @@
   position: relative;
   padding: 23px 0;
   color: $navFontColorMain;
+  transition: color 1s;
   @include navbarFont();
   &:hover {
     color: $linkColor;
