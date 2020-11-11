@@ -10,21 +10,19 @@
 }
 
 .product_img {
+  box-sizing: border-box;
   display: flex;
   background-repeat: no-repeat;
   background-position: center;
+  border: 3px solid transparent;
   width: 160px;
   height: 134px;
-  border-color: transparent;
   margin: 30px 20px 0;
-  transition: width 1s, height 1s, margin 1s, border 1s;
+  transition: transform 1s, border 1s;
 }
 
 .product_img:hover {
-  box-sizing: border-box;
-  width: 200px;
-  height: 164px;
-  margin: 0;
+  transform: scale(1.2);
   border: 3px solid $cardBorderColor;
   border-radius: 5px;
 }
