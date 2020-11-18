@@ -16,7 +16,6 @@
   }
 
   &__img {
-    align-self: center;
     width: 166px;
     height: 164px;
     background-repeat: no-repeat;
@@ -25,6 +24,7 @@
     border: 3px solid transparent;
     border-radius: 4px;
     transition: transform 1s;
+
     &:hover {
       transform: scale(1.2);
       border: 3px solid $cardBorderColor;
