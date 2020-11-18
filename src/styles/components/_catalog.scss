@@ -1,7 +1,9 @@
 .catalog {
-  max-width: ($marginForCardBothSide + $cardWidth + $marginForCardBothSide) * 4;
-
-  &__card {
-    margin: 0 $marginForCardBothSide 50px;
-  }
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 200px);
+  column-gap: 48px;
+  row-gap: 50px;
+  grid-auto-rows: 403px;
+  width: 992px;
 }
