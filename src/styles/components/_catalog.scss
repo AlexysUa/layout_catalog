@@ -1,9 +1,9 @@
 .catalog {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 200px);
-  column-gap: 48px;
-  row-gap: 50px;
-  grid-auto-rows: 403px;
-  width: 992px;
+  grid-template-columns: repeat(auto-fill, $cardWidth);
+  grid-auto-rows: $cardHeight;
+  column-gap: $cardsHorIndent;
+  row-gap: $cardVertIndent;
+  width: $cardWidth * 4 + $cardsHorIndent * 3;
 }
