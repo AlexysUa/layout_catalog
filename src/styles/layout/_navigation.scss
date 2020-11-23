@@ -18,6 +18,7 @@
     position: relative;
     height: $headerBlockHeight;
     color: $navFontColorMain;
+    transition: color 0.5s;
     @include navbarFont();
 
     &:hover {
@@ -27,7 +28,7 @@
 
   .is-active {
     color: $linkColor;
-    
+
     &::after {
       content: "";
       position: absolute;

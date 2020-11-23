@@ -16,10 +16,20 @@
   }
 
   &__img {
-    width: 160px;
-    height: 134px;
+    width: 166px;
+    height: 164px;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 12px 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: transform 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      border-color: $cardBorderColor;
+    }
   }
 
   &__description {
@@ -66,13 +76,15 @@
   &__button {
     text-align: center;
     line-height: 40px;
-    background: $linkColor;
+    background-color: $linkColor;
     color: $cardMainColor;
     border: 1px solid $linkColor;
     border-radius: 5px;
+    transition: background-color 1s, color 1s;
     @include buttonFont();
 
     &:hover {
+      cursor: pointer;
       background-color: $cardMainColor;
       color: $linkColor;
     }
